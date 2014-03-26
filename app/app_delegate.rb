@@ -1,9 +1,5 @@
 class AppDelegate < PM::Delegate
-
-  status_bar true, animation: :none
-
   def on_load(app, options)
-    open HomeScreen.new(nav_bar: true)
+    open HomeScreen # If I bring this line up the issue appears
   end
-  
 end
